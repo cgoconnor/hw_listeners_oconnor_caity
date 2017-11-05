@@ -34,7 +34,8 @@ label {
     font-weight: bold;
 }
 
-input {
+input,
+textarea {
     height: 3rem;
     padding:.5rem;
     width: 100%;
@@ -54,6 +55,6 @@ button {
     font-weight:bold;
 }
 
-input[type=textarea] {
+textarea {
     height: 8rem;
 }
