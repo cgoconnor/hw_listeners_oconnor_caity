@@ -24,7 +24,8 @@ body {
 
 label,
 input,
-button {
+button,
+textarea {
     display: block;
     font-family: 'Quicksand';
 }
