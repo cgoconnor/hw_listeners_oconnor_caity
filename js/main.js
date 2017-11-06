@@ -47,18 +47,23 @@ var footer = document.getElementById('footer');
 colorForm.addEventListener('submit', function (event) {
     if (colorInput.value === '1') {
         event.preventDefault();
+        colorText.innerHTML = '';
         footer.style.backgroundColor = 'green';
     } else if (colorInput.value === '2') {
         event.preventDefault();
+        colorText.innerHTML = '';
         footer.style.backgroundColor = 'blue';
     } else if (colorInput.value === '3') {
         event.preventDefault();
+        colorText.innerHTML = '';
         footer.style.backgroundColor = 'purple';
     } else if (colorInput.value === '4') {
         event.preventDefault();
+        colorText.innerHTML = '';
         footer.style.backgroundColor = 'orange';
     } else if (colorInput.value === '5') {
         event.preventDefault();
+        colorText.innerHTML = '';
         footer.style.backgroundColor = 'pink';
     } else {
         event.preventDefault();

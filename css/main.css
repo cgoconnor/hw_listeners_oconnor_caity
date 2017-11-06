@@ -1,0 +1,46 @@
+img,
+input,
+label{
+    display: block;
+}
+
+header,
+main,
+section,
+aside,
+form,
+footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3% 1%;
+}
+
+h1,
+h2,
+p,
+li,
+label,
+input {
+    font-family: 'Quicksand';
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+li,
+.quotes p {
+    text-align: left;
+}
+
+img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input[type=text] {
+    width: 5rem;
+}
+
+input[type=submit] {
+    display:none;
+}
