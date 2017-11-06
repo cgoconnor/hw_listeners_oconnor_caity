@@ -40,15 +40,29 @@ image.addEventListener('click', function () {
     }
 });
 // Listens for submit, changes color of footer
+var colorForm = document.getElementById('colorForm');
 var colorInput = document.getElementById('color');
 var colorText = document.getElementById('not-recognized');
-var footer = document.getElementsByTagName('footer');
-colorInput.addEventListener('submit', function (event) {
+var footer = document.getElementById('footer');
+colorForm.addEventListener('submit', function (event) {
     if (colorInput.value === '1') {
         event.preventDefault();
-        colorText.innerHTML = 'testing';
+        footer.style.backgroundColor = 'green';
+    } else if (colorInput.value === '2') {
+        event.preventDefault();
+        footer.style.backgroundColor = 'blue';
+    } else if (colorInput.value === '3') {
+        event.preventDefault();
+        footer.style.backgroundColor = 'purple';
+    } else if (colorInput.value === '4') {
+        event.preventDefault();
+        footer.style.backgroundColor = 'orange';
+    } else if (colorInput.value === '5') {
+        event.preventDefault();
+        footer.style.backgroundColor = 'pink';
     } else {
         event.preventDefault();
         colorText.innerHTML = 'Oops, try again!';
+        footer.style.backgroundColor = 'white';
     }
 });
