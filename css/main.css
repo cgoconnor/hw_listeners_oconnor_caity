@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 img,
 input,
 label{
@@ -12,7 +20,7 @@ form,
 footer {
     width: 100%;
     margin: 0 auto;
-    padding: 3% 1%;
+    padding: 1rem .5rem;
 }
 
 h1,
@@ -32,15 +40,31 @@ li,
     text-align: left;
 }
 
+.quotes,
 img {
-    width: 50%;
+    width: 90%;
+    max-width: 600px;
     margin: 0 auto;
+}
+
+h2 {
+    padding: 1rem .5rem 0;
+}
+
+ul {
+    padding: .25rem .5rem 1rem 3rem;
 }
 
 input[type=text] {
     width: 5rem;
+    height: 2rem;
+    margin: .5rem auto;
 }
 
 input[type=submit] {
     display:none;
+}
+
+aside {
+    max-width: 350px;
 }

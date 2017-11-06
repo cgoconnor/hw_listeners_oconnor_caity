@@ -1,4 +1,4 @@
-//Listens for scroll, changes quote on scroll
+//Listens for mouseover, changes quote on scroll
 var quotes = [
     'The best ideas come as jokes. Make your thinking as funny as possible. &mdash;David Ogilvy',
     'Google has the functionality of a really complicated Swiss Army knife, but the home page is our way of approaching it closed. It&rsquo;s simple, it&rsquo;s elegant. You can slip it in your pocket, but it&rsquo;s got the great doodad when you need it. &mdash;Marissa Mayer',
@@ -48,15 +48,15 @@ colorForm.addEventListener('submit', function (event) {
     if (colorInput.value === '1') {
         event.preventDefault();
         colorText.innerHTML = '';
-        footer.style.backgroundColor = 'green';
+        footer.style.backgroundColor = 'PaleGreen';
     } else if (colorInput.value === '2') {
         event.preventDefault();
         colorText.innerHTML = '';
-        footer.style.backgroundColor = 'blue';
+        footer.style.backgroundColor = 'Lightblue';
     } else if (colorInput.value === '3') {
         event.preventDefault();
         colorText.innerHTML = '';
-        footer.style.backgroundColor = 'purple';
+        footer.style.backgroundColor = 'MediumOrchid';
     } else if (colorInput.value === '4') {
         event.preventDefault();
         colorText.innerHTML = '';
