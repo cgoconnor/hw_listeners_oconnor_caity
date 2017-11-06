@@ -24,7 +24,6 @@ body {
 
 label,
 input,
-button,
 textarea {
     display: block;
     font-family: 'Quicksand';
@@ -45,7 +44,7 @@ textarea {
     border-radius: 4px;
 }
 
-button {
+input[type=submit] {
     width: 30%;
     margin: 0 auto;
     background-color: #ff9933;

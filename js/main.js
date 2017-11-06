@@ -1,6 +1,6 @@
-var submit = document.getElementById('submit');
+var mainForm = document.getElementById('main-form');
 
-submit.addEventListener('click', function (event) {
+mainForm.addEventListener('submit', function (event) {
     event.preventDefault();
     var firstName = document.getElementById('firstName').value;
     var lastName = document.getElementById('lastName').value;
