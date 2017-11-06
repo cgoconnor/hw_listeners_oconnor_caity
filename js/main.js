@@ -1,3 +1,4 @@
+//Listens for scroll, changes quote on scroll
 var quotes = [
     'The best ideas come as jokes. Make your thinking as funny as possible. &mdash;David Ogilvy',
     'Google has the functionality of a really complicated Swiss Army knife, but the home page is our way of approaching it closed. It&rsquo;s simple, it&rsquo;s elegant. You can slip it in your pocket, but it&rsquo;s got the great doodad when you need it. &mdash;Marissa Mayer',
@@ -5,14 +6,21 @@ var quotes = [
     'If you can&rsquo;t explain it simply, you don&rsquo;t understand it well enough. &mdash;Albert Einstein',
     'You can use an eraser on the drafting table or a sledge hammer on the construction site. &mdash;Frank Lloyd Wright',
     'Make things as simple as possible, but not simpler &mdash;Albert Einstein',
-    'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools. &mdashDouglas Adams',
+    'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools. &mdash;Douglas Adams',
     'Think more. Design less. &mdash;Ellen Lupton'
 ];
-
 var quote = document.getElementById('quote');
-
-quote.innerHTML = quotes[0];
-
+var quoteNum = 1;
+quote.addEventListener('wheel', function (event) {
+    event.preventDefault();
+    if (quoteNum < quotes.length) {
+        quote.innerHTML = quotes[quoteNum];
+        quoteNum++;
+    } else {
+        quote.innerHTML = quotes[0];
+    }
+});
+// Listens for click on image, changes image
 var images = [
     '<img src="img/annie-spratt-137960.jpg" alt="Spools of ribbon">',
     '<img src="img/annie-spratt-372202.jpg" alt="Exterior brick wall with window">',
@@ -32,3 +40,5 @@ image.addEventListener('click', function () {
         image.innerHTML = images[0];
     }
 });
+// Listens for submit, changes color of footer
+var color = document.getElementById('color').value;
