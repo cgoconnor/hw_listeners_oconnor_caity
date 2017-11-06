@@ -12,3 +12,17 @@ var quotes = [
 var quote = document.getElementById('quote');
 
 quote.innerHTML = quotes[0];
+
+var images = [
+    '<img src="img/annie-spratt-137960.jpg" alt="Spools of ribbon">',
+    '<img src="img/annie-spratt-371692.jpg" alt="Exterior brick wall with window">',
+    '<img src="img/lucas-huffman-371692.jpg" alt="Two penguins sliding on snow">',
+    '<img src="img/norbert-von-niman-354528.jpg" alt="Mountains with snow from above">',
+    '<img src="img/romello-williams-38588.jpg" alt="Crack in ice, teal color">',
+    '<img src="img/sean-parker-360081.jpg" alt="Natural arch at night with milky way in background">',
+    '<img src="img/vitaliy-lyubezhanin-385454.jpg" alt="Hands with henna designs">'
+];
+
+var image = document.getElementById('images');
+
+image.innerHTML = images[0];
