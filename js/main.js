@@ -11,8 +11,7 @@ var quotes = [
 ];
 var quote = document.getElementById('quote');
 var quoteNum = 1;
-quote.addEventListener('wheel', function (event) {
-    event.preventDefault();
+quote.addEventListener('mouseover', function () {
     if (quoteNum < quotes.length) {
         quote.innerHTML = quotes[quoteNum];
         quoteNum++;
@@ -41,4 +40,15 @@ image.addEventListener('click', function () {
     }
 });
 // Listens for submit, changes color of footer
-var color = document.getElementById('color').value;
+var colorInput = document.getElementById('color');
+var colorText = document.getElementById('not-recognized');
+var footer = document.getElementsByTagName('footer');
+colorInput.addEventListener('submit', function (event) {
+    if (colorInput.value === '1') {
+        event.preventDefault();
+        colorText.innerHTML = 'testing';
+    } else {
+        event.preventDefault();
+        colorText.innerHTML = 'Oops, try again!';
+    }
+});
